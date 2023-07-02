@@ -1,9 +1,8 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import App from './App'
-import { colors } from './components/utils/_var'
-import { injectGlobal } from 'styled-components'
-import registerServiceWorker from './registerServiceWorker'
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
+import { colors } from "./components/utils/_var";
+import { injectGlobal } from "styled-components";
 
 // global styles
 injectGlobal`
@@ -11,7 +10,6 @@ injectGlobal`
     background-color: ${colors.$colorBg};
     color: #fff;
   }
-`
+`;
 
-ReactDOM.render(<App />, document.getElementById('root'))
-registerServiceWorker()
+ReactDOM.render(<App />, document.getElementById("root"));
